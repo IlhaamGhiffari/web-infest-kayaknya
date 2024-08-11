@@ -13,6 +13,7 @@ interface CompetitionCardProps {
     jadwalPendaftaran: string;
     jadwalPelaksanaan: string;
     totalHadiah: string;
+    bukuPanduan: string;
 }
 
 export const CompetitionCard = (props: CompetitionCardProps) => {
@@ -44,7 +45,7 @@ export const CompetitionCard = (props: CompetitionCardProps) => {
         <p className={`text-xs md:text-[0.86rem] w-full font-normal text-left`}>{props.totalHadiah}</p>
       </div>
       <div className="flex flex-col md:flex-row gap-2.5 md:gap-4">
-        <Link href={props.linkPendaftaran} className={`rounded-2xl duration-200 bg-black/60 border hover:scale-[1.03] hover:border-secondary-yellow/30 border-secondary-yellow flex justify-between items-center text-xs w-full px-4 py-2 gap-4 ${montserrat.className}`}>
+        <Link href={props.bukuPanduan} className={`rounded-2xl duration-200 bg-black/60 border hover:scale-[1.03] hover:border-secondary-yellow/30 border-secondary-yellow flex justify-between items-center text-xs w-full px-4 py-2 gap-4 ${montserrat.className}`}>
           <p className="font-medium">Buku Panduan</p>
           <Arrow />
         </Link>

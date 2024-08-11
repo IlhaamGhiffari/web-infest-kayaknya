@@ -53,6 +53,7 @@ export const CompetitionSwiper: FC<CompetitionSwiperProps> = ({swiperRef, setAct
               jadwalPendaftaran={item.jadwalPendaftaran}
               jadwalPelaksanaan={item.jadwalPelaksanaan}
               totalHadiah={item.totalHadiah}
+              bukuPanduan={item.bukuPanduan}
             />
           </SwiperSlide>
         ))}
