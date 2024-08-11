@@ -66,7 +66,7 @@ export const Header = () => {
           priority
           width={36}
           height={36}
-          className='w-9 h-10 md:w-11 md:h-12'
+          className='w-9 h-10 md:w-10 md:h-12'
         />
       </button>
       {(isDesktop || isTablet) && (
