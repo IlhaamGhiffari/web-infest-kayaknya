@@ -26,9 +26,11 @@ const config: Config = {
         "cattedrale-outline": ["Cattedrale-Outline", "sans-serif"],
         "imbue": ["Imbue", "serif"]
       },
-      colors: {
-        "primary": "#0A1214",      
-        "secondary": "#070D0F",      
+      colors: {   
+        // "primary": "#0A1214",      
+        // "secondary": "#070D0F",     
+        "primary": "#0C1914",      
+        "secondary": "#0A1214",      
         "primary-yellow": "#FDD026",
         "secondary-yellow": "#B89926",      
       },

@@ -37,13 +37,13 @@ const Home = () => {
       <div id="hero">
         <HeroSwiper />
       </div>
-      <div id="tentang-infest" className="flex flex-col w-full pt-14 px-8 md:px-12 lg:px-16 gap-12 relative bg-gradient-to-b from-primary via-transparent to-primary">
+      <div id="tentang-infest" className="flex flex-col w-full pt-14 px-8 md:px-12 lg:px-16 gap-12 relative bg-gradient-to-b from-primary via-transparent  to-primary">
         <Image
           src={"/assets/images/pattern.png"}
           fill
           sizes="100vw"
           alt="dokumentasi-tentang-infest-usk"
-          className="absolute inset-0 -z-10 object-cover opacity-10"
+          className="absolute inset-0 -z-10 object-cover opacity-15"
         />
         <h2 className={`text-[26vw] lg:text-[10rem] text-center text-primary-yellow font-imbue -mb-12`}>
           TENTANG INFEST
