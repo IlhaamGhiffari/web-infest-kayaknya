@@ -8,8 +8,8 @@ export const kompetisi = [
         jadwalPelaksanaan: "25 September 2024",
         totalHadiah: "Rp. 10.000.000",
         fotoDepan: "/assets/images/UI-and-UX.jpg",        
-        linkPendaftaran: "https://bit.ly/INFESTX2024GuidebookUIUX",
-        bukuPanduan: "https://bit.ly/DaftarUIUXDesignINFEST2024"
+        linkPendaftaran: "https://bit.ly/DaftarUIUXDesignINFEST2024",
+        bukuPanduan: "https://bit.ly/INFESTX2024GuidebookUIUX"
     },
     {
         id: 2,
@@ -20,8 +20,8 @@ export const kompetisi = [
         jadwalPelaksanaan: "22 September 2024",
         totalHadiah: "Rp. 1.000.000",
         fotoDepan: "/assets/images/coins-infest-usk.JPG",        
-        linkPendaftaran: "https://bit.ly/GuidebookCOINS_INFESTX2024",
-        bukuPanduan: "https://bit.ly/InfestCoins2024"
+        linkPendaftaran: "https://bit.ly/InfestCoins2024",
+        bukuPanduan: "https://bit.ly/GuidebookCOINS_INFESTX2024"
     },
     {
         id: 3,
@@ -32,7 +32,7 @@ export const kompetisi = [
         jadwalPelaksanaan: "23 September 2024 - 24 September 2024",
         totalHadiah: "Rp. 6.000.000",
         fotoDepan: "/assets/images/dokumentasi-coins-infest-usk.JPG",        
-        linkPendaftaran: "https://bit.ly/INFESTX2024GuidebookMobileLegends",
-        bukuPanduan: "https://bit.ly/DaftarMLInfestX2024"
+        linkPendaftaran: "https://bit.ly/DaftarMLInfestX2024",
+        bukuPanduan: "https://bit.ly/INFESTX2024GuidebookMobileLegends"
     },
 ]
