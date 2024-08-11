@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React, { useEffect, useRef, useState } from 'react'
-import { useScreenSize } from '../libs/hooks/screenSizeValidation';
+import { useScreenSize } from '../../libs/hooks/screenSizeValidation';
 import { scrollIntoSection } from '@/libs/helpers/scrollIntoSection';
 
 export const Header = () => {

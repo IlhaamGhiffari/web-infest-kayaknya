@@ -1,6 +1,6 @@
 "use client";
 
-import { Header } from "../components/header";
+import { Header } from "../components/header/header";
 import { HeroSwiper } from "../components/heroSection/heroSwiper";
 import { DocumentationDesktop } from "../components/aboutSection/documentationDekstop";
 import { DocumentationMobile } from "../components/aboutSection/documentationMobile";
