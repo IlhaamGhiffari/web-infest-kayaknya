@@ -64,7 +64,7 @@ export const DocumentationDesktop = () => {
       <div className="absolute hover:scale-110 duration-200 -bottom-[12%] right-[0%] -z-20 w-[38%] h-3/4">
         <div className="bg-gradient-to-t from-primary/90 border-[2.6px] border-primary-yellow to-primary via-primary/40 absolute inset-0 rounded-2xl z-30"></div>
         <Image
-          src="/assets/images/closing-infest-usk.JPG"
+          src="https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/closing-infest-usk.JPG"
           fill
           sizes="40vw"
           alt="dokumentasi-infest-usk"

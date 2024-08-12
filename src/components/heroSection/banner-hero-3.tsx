@@ -7,7 +7,7 @@ export const BannerHero3 = () => {
   return (
     <div className="h-screen w-full flex justify-center items-center relative bg-gradient-to-t from-primary from-5% to-primary-yellow/5">
       <Image
-        src={"/assets/images/kompetisi-infest-usk.JPG"}
+        src={"https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/kompetisi-infest-usk-iCWoJO4mqxLuvsRJRvbgO4tS0PIkqF.JPG"}
         className="-z-10 object-cover opacity-80"
         priority
         fill
