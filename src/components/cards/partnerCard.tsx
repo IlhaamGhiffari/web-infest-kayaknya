@@ -13,7 +13,7 @@ export const PartnerCard = (props: PartnerCardProps) => {
         alt="logo-partner-infest-usk"
         width={80}
         height={80}
-        className="rounded-xl w-[4rem] md:w-20"
+        className="rounded-xl w-[4rem] md:w-[3.66rem] lg:w-20"
       />
     </div>
   );

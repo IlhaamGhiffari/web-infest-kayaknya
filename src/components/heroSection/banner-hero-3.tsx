@@ -32,11 +32,11 @@ export const BannerHero3 = () => {
           KOMPETISI
         </h1>
         <div className="flex w-full justify-between px-2 gap-2 md:gap-6">
-          <p className="border border-primary-yellow w-24 md:w-full md:text-xl text-xs flex items-center justify-center bg-primary-yellow/30 rounded-full px-4 py-2 shadow-lg shadow-black/60 text-white">COINS</p>
-          <p className="border border-primary-yellow w-24 md:w-full md:text-xl text-xs flex items-center justify-center bg-primary-yellow/30 rounded-full px-4 py-2 shadow-lg shadow-black/60 text-white">UI/UX</p>
-          <p className="border border-primary-yellow w-24 md:w-full md:text-xl text-[0.74rem] flex items-center justify-center bg-primary-yellow/30 rounded-full px-4 py-2 shadow-lg shadow-black/60 text-white">E-SPORTS</p>
+          <p className="border border-primary-yellow w-24 md:w-full lg:text-[1vw] text-xs flex items-center justify-center bg-primary-yellow/30 rounded-full px-4 py-2 shadow-lg shadow-black/60 text-white">COINS</p>
+          <p className="border border-primary-yellow w-24 md:w-full lg:text-[1vw] text-xs flex items-center justify-center bg-primary-yellow/30 rounded-full px-4 py-2 shadow-lg shadow-black/60 text-white">UI/UX</p>
+          <p className="border border-primary-yellow w-24 md:w-full lg:text-[1vw] text-[0.74rem] flex items-center justify-center bg-primary-yellow/30 rounded-full px-4 py-2 shadow-lg shadow-black/60 text-white">E-SPORTS</p>
         </div>
-        <button onClick={() => scrollIntoSection("kompetisi")} className="rounded-full bg-primary-yellow/30 border-[0.4px] border-primary-yellow shadow-lg shadow-black/60 hover:opacity-80 duration-200 text-white px-4 py-2 font-medium text-sm flex gap-2 items-center">
+        <button onClick={() => scrollIntoSection("kompetisi")} className="rounded-full -mt-[0.6vh] bg-primary-yellow/30 border-[0.4px] border-primary-yellow shadow-lg shadow-black/60 hover:opacity-80 duration-200 text-white px-4 py-2 font-medium text-sm lg:text-[1vw] flex gap-2 items-center">
           <p>Lebih lanjut</p>
           <ArrowCornerDown className="opacity-80"/>
         </button>        
