@@ -39,7 +39,7 @@ const FooterDekstop = () => {
           </p>
         </div>
         <Image
-          src={"/assets/images/logo-infest-usk.png"}
+          src={"https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/logo-infest-usk.webp"}
           width={70}
           height={0}
           alt="logo-infest-usk"

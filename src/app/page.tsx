@@ -39,7 +39,7 @@ const Home = () => {
       </div>
       <div id="tentang-infest" className="flex flex-col w-full pt-14 px-8 md:px-12 lg:px-16 gap-12 relative bg-gradient-to-b from-primary via-transparent  to-primary">
         <Image
-          src={"/assets/images/pattern.png"}
+          src={"https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/pattern.webp"}
           fill
           sizes="100vw"
           alt="dokumentasi-tentang-infest-usk"
@@ -65,21 +65,21 @@ const Home = () => {
       </div>
       <div id="seminar" className="flex flex-col w-full pt-14 lg:pt-32 px-8 md:px-16 gap-12 relative bg-gradient-to-t from-primary to-transparent">
         <Image
-          src={"/assets/images/asset-pattern-infest-1.png"}
+          src={"https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/asset-pattern-infest-1.webp"}
           width={700}
           height={700}
           alt="asset-pattern-infest-1"
           className="absolute right-0 top-0 md:-top-52 -z-10 object-cover opacity-50"
         />    
         <Image
-          src={"/assets/images/asset-pattern-infest-2.png"}
+          src={"https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/asset-pattern-infest-2.webp"}
           width={800}
           height={800}
           alt="asset-pattern-infest-2"
           className="absolute left-0 bottom-32 md:-top-20 -z-10 object-cover opacity-50"
         />    
         <Image
-          src={"/assets/images/asset-pattern-infest-1.png"}
+          src={"https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/asset-pattern-infest-1.webp"}
           width={700}
           height={700}
           alt="asset-pattern-infest-1"
@@ -109,7 +109,7 @@ const Home = () => {
               <li className="pl-4 flex h-full items-end w-full justify-end">
                 <Link href={"google.com"} className="box text-xs font-bold flex flex-col w-full h-full items-center justify-center gap-2 py-3 shadow-balance-yellow-primary hover:scale-105 duration-200 hover:bg-black">
                   <Image
-                    src={"/assets/images/arrow.png"}
+                    src={"https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/arrow.webp"}
                     alt="arrow-daftar-seminar"
                     width={40}
                     height={40}
@@ -125,7 +125,7 @@ const Home = () => {
       </div>
       <div id="kompetisi" className="flex flex-col relative w-full pt-14 lg:pt-32 px-8 md:px-16 gap-12 bg-gradient-to-b from-primary via-transparent to-primary">
         <Image
-          src={"/assets/images/gold_confet.png"}
+          src={"https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/gold_confet.webp"}
           fill
           sizes="100vw"
           alt="confetti-infest-usk"

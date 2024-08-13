@@ -7,7 +7,7 @@ export const kompetisi = [
         jadwalPendaftaran: "10 Agustus 2024 - 10 September 2024",
         jadwalPelaksanaan: "25 September 2024",
         totalHadiah: "Rp. 10.000.000",
-        fotoDepan: "/assets/images/UI-and-UX.jpg",        
+        fotoDepan: "https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/UI-and-UX.webp",        
         linkPendaftaran: "https://bit.ly/DaftarUIUXDesignINFEST2024",
         bukuPanduan: "https://bit.ly/INFESTX2024GuidebookUIUX"
     },
@@ -19,7 +19,7 @@ export const kompetisi = [
         jadwalPendaftaran: "10 Agustus 2024 - 15 September 2024",
         jadwalPelaksanaan: "22 September 2024",
         totalHadiah: "Rp. 1.000.000",
-        fotoDepan: "/assets/images/coins-infest-usk.JPG",        
+        fotoDepan: "https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/coins-infest-usk.webp",        
         linkPendaftaran: "https://bit.ly/InfestCoins2024",
         bukuPanduan: "https://bit.ly/GuidebookCOINS_INFESTX2024"
     },
@@ -31,7 +31,7 @@ export const kompetisi = [
         jadwalPendaftaran: "10 Agustus 2024 - 10 September 2024",
         jadwalPelaksanaan: "23 September 2024 - 24 September 2024",
         totalHadiah: "Rp. 6.000.000",
-        fotoDepan: "/assets/images/dokumentasi-coins-infest-usk.JPG",        
+        fotoDepan: "https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/dokumentasi-coins-infest-usk.webp",        
         linkPendaftaran: "https://bit.ly/DaftarMLInfestX2024",
         bukuPanduan: "https://bit.ly/INFESTX2024GuidebookMobileLegends"
     },

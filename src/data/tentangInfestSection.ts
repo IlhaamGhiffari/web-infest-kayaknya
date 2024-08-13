@@ -3,32 +3,32 @@ export const infestDescription: string = "Informatics Festival (INFEST) kembali 
 export const imagesForMobile = [
   {
     id: 1,
-    src: "/assets/images/opening-infest-usk.JPG",
+    src: "https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/opening-infest-usk.webp",
     alt: "opening-infest-usk",
   },
   {
     id: 2,
-    src: "/assets/images/coins-infest-usk.JPG",
+    src: "https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/coins-infest-usk.webp",
     alt: "coins-infest-usk",
   },
   {
     id: 3,
-    src: "/assets/images/dokumentasi-coins-infest-usk.JPG",
+    src: "https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/dokumentasi-coins-infest-usk.webp",
     alt: "dokumentasi-coins-infest-usk",
   },
   {
     id: 4,
-    src: "/assets/images/dokumentasi-seminar-infest-usk.JPG",
+    src: "https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/dokumentasi-seminar-infest-usk.webp",
     alt: "dokumentasi-seminar-infest-usk",
   },
   {
     id: 5,
-    src: "/assets/images/seminar-infest.JPG",
+    src: "https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/seminar-infest.webp",
     alt: "seminar-infest-usk",
   },
   {
     id: 6,
-    src: "/assets/images/closing-infest-usk.JPG",
+    src: "https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/closing-infest-usk.webp",
     alt: "closing-dokumentasi-infest-usk",
   },
 ];

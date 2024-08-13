@@ -33,7 +33,7 @@ const FooterMobile = () => {
   return (
     <div className="bg-secondary border-t border-primary-yellow w-full flex flex-col px-8 py-6 gap-4 text-white items-center">
       <Image
-        src={"/assets/images/logo-infest-usk.png"}
+        src={"https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/logo-infest-usk.webp"}
         width={60}
         height={0}
         alt="logo-infest-usk"

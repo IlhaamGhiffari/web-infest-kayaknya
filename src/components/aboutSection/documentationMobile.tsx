@@ -40,7 +40,7 @@ export const DocumentationMobile = () => {
             <Image
               fill
               sizes="40vw"
-              src={"/assets/images/gabungan-logo.png"}
+              src={"https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/gabungan-logo.webp"}
               alt="gabungan-logo-instansi-terkait-infest"
               className="object-cover"
             />

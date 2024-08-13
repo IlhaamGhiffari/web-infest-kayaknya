@@ -61,7 +61,7 @@ export const Header = () => {
     <div ref={navbarRef} className='fixed w-screen h-16 md:h-20 top-0 z-[100] px-8 md:px-12 py-4 flex items-center justify-between text-white bg-secondary border-b border-primary-yellow'> 
       <button onClick={() => scrollIntoSection("hero")} className='font-bold font-cattedrale text-2xl lg:hover:scale-110 duration-200'>
         <Image
-          src='/assets/images/logo-infest-usk.png'
+          src='https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/logo-infest-usk.webp'
           alt='logo-infest-usk'
           priority
           width={36}
@@ -77,11 +77,11 @@ export const Header = () => {
         </div>
       )}
       {isMobile && (
-        <button onClick={showNavbar} className="w-10 h-10 relative flex justify-end items-center">
+        <div onClick={showNavbar} className="w-10 h-10 relative flex justify-end items-center">
           <span aria-hidden="true" className={`block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out ${isMenuShow ? 'rotate-45' : '-translate-y-1.5'}`}></span>
           <span aria-hidden="true" className={`block absolute  h-0.5 w-5 bg-current transform transition duration-500 ease-in-out ${isMenuShow && 'hidden'}`}></span>
           <span aria-hidden="true" className={`block absolute  h-0.5 w-5 bg-current transform transition duration-500 ease-in-out ${isMenuShow ? '-rotate-45' : 'translate-y-1.5'}`}></span>
-        </button>
+        </div>
       )}
       <ul className={`${isMenuShow ? 'h-auto top-16' : 'top-0 -z-[100] -translate-y-56 opacity-0'} ease-in-out duration-300 fixed right-8 w-[44%] p-4 flex flex-col rounded-b-xl bg-secondary divide-y divide-primary-yellow/60`}>
         {navbar.map((item) => (
