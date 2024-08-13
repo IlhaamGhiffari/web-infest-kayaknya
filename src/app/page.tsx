@@ -15,13 +15,14 @@ import FooterDekstop from "@/components/footer/footerDekstop";
 import FooterMobile from "@/components/footer/footerMobile";
 import { SeminarSwiperImages } from "@/components/seminarSection/seminarSwiperImages";
 import Link from "next/link";
-import { LegacyRef, useRef, useState } from "react";
+import { LegacyRef, useEffect, useRef, useState } from "react";
 import { SwiperRef } from "swiper/react";
 
 const Home = () => {
   const { isMobile, isTablet, isDesktop } = useScreenSize();
   const swiperRef: LegacyRef<SwiperRef> | null = useRef(null);
   const [activeKompetisiIndex, setActiveKompetisiIndex] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
 
   const slideTo = (index: number) => {
     if (swiperRef.current && swiperRef.current.swiper) {
@@ -29,10 +30,20 @@ const Home = () => {
       setActiveKompetisiIndex(index);
     }
   };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+  
+
   return (
     <div className=" h-full w-full flex flex-col overflow-x-hidden">
       <div>
-        <Header />
+        <Header/>
       </div>
       <div id="hero">
         <HeroSwiper />
@@ -133,8 +144,12 @@ const Home = () => {
         />
         <div className="flex flex-col lg:flex-row gap-14">    
           {(isDesktop) && (
-            <div className="overflow-hidden pb-10 lg:w-1/2 -mx-8 lg:-mx-0">
-              <CompetitionSwiper swiperRef={swiperRef} setActiveIndex={setActiveKompetisiIndex}/>
+            <div className="overflow-hidden pb-10 lg:w-1/2 -mx-8 lg:-mx-0 flex justify-center items-center">
+              {isLoading ? (
+                <p className="font-semibold animate-blink text-primary-yellow">MEMUAT...</p>
+              ) : (
+                <CompetitionSwiper swiperRef={swiperRef} setActiveIndex={setActiveKompetisiIndex}/>
+              )}
             </div>
           )}
           <div className="flex flex-col lg:w-1/2 w-full gap-10">
@@ -155,9 +170,13 @@ const Home = () => {
             </div>
           </div>   
           {(isMobile || isTablet) && (
-            <div className="overflow-hidden pb-10 lg:w-1/2 -mx-8 lg:mx-0 md:mt-6">
+            <div className="overflow-hidden pb-10 lg:w-1/2 -mx-8 lg:-mx-0 flex justify-center items-center">
+            {isLoading ? (
+              <p className="font-semibold animate-blink text-primary-yellow">MEMUAT...</p>
+            ) : (
               <CompetitionSwiper swiperRef={swiperRef} setActiveIndex={setActiveKompetisiIndex}/>
-            </div>
+            )}
+          </div>
           )} 
         </div>
         <div className="bg-gradient-to-r from-transparent to-transparent via-primary-yellow from-10% to-90% w-full h-[0.1rem] mt-8 lg:mt-11"></div>{/* line separator*/}
@@ -166,11 +185,17 @@ const Home = () => {
         <h2 className="text-[26vw] lg:text-[10rem] text-center text-primary-yellow font-imbue">
           KERJA SAMA
         </h2>
-        <Marquee direction="left" autoFill={true}>
-          {partners.map((partner) => (
-            <PartnerCard key={partner.nama} logoSrc={partner.src}/>
-          ))}
-        </Marquee>
+        {isLoading ? (
+          <div className="flex justify-center items-center w-full lg:h-32 h-24 my-8">
+            <p className="font-semibold text-primary-yellow animate-blink">MEMUAT...</p>
+          </div>
+        ) : (
+          <Marquee direction="left" autoFill={true}>
+            {partners.map((partner) => (
+              <PartnerCard key={partner.nama} logoSrc={partner.src}/>
+            ))}
+          </Marquee>
+        )}
       </div>
       <div id="kontak" className="footer">
         {(isDesktop || isTablet) && (

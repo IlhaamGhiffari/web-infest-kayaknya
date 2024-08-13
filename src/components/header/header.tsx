@@ -41,13 +41,6 @@ export const Header = () => {
   const showNavbar = () => {
     setIsMenuShow((prev) => !prev);
     const isMenuShowAfterClick = !isMenuShow;
-    if (isMenuShowAfterClick) {
-      setIsUnmounting(false);      
-    } else {
-      setTimeout(() => {
-        setIsUnmounting(true);
-      }, 500);
-    }
   }
 
   useEffect(() => {
@@ -59,7 +52,7 @@ export const Header = () => {
 
   return (
     <div ref={navbarRef} className='fixed w-screen h-16 md:h-20 top-0 z-[100] px-8 md:px-12 py-4 flex items-center justify-between text-white bg-secondary border-b border-primary-yellow'> 
-      <button onClick={() => scrollIntoSection("hero")} className='font-bold font-cattedrale text-2xl lg:hover:scale-110 duration-200'>
+      <button onClick={() => scrollIntoSection("hero")} className='lg:hover:scale-110 duration-200'>
         <Image
           src='https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/logo-infest-usk.webp'
           alt='logo-infest-usk'
