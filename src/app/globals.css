@@ -91,7 +91,7 @@
 @media only screen and (min-width: 1024px) {
   .hero-swiper .swiper-button-next,
   .hero-swiper .swiper-button-prev {
-    background: url("https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/arrow.webp") no-repeat center;
+    background: url("/assets/images/arrow.png") no-repeat center;
     background-size: 4rem;
     display: flex;
     align-items: center;
