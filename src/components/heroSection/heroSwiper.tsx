@@ -11,11 +11,12 @@ import { BannerHero3 } from "./banner-hero-3";
 export const HeroSwiper = () => {
   const swiperStyleHero: CustomCSSProperties = {
     "--swiper-pagination-color": "rgba(253, 208, 38, 1)",
+    "--swiper-navigation-color" : "#FDD026",
     "--swiper-pagination-bullet-width": "6rem",
     "--swiper-pagination-bullet-height": "6px",
     "--swiper-pagination-bullet-border-radius": "100px",
     "--swiper-pagination-bullet-inactive-color": "transparent",
-    "--swiper-navigation-size": "4rem",
+    "--swiper-navigation-size": "2.4rem", 
   };
   return (
     <Swiper
