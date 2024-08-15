@@ -52,7 +52,7 @@ const FooterMobile = () => {
       <div className="text-sm text-center">
         <p className="font-bold uppercase">Alamat</p>
         <p className="mt-2.5 text-xs">
-          Jl. Tgk. Chik Pante Kulu No. 5 Darussalam, Banda Aceh 23111
+          Jl. Syech Abdurrauf No.3, Kopelma Darussalam, Kecamatan Syiah Kuala, Kota Banda Aceh, Aceh 23111, Indonesia
         </p>
       </div>
       <div className="flex flex-col gap-3 w-full mt-2.5">
