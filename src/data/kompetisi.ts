@@ -39,7 +39,7 @@ export const kompetisi = [
         jadwalPendaftaran: "15 Agustus 2024 - 15 September 2024",
         jadwalPelaksanaan: "27 September 2024",
         totalHadiah: "Rp. 6.000.000",
-        fotoDepan: "https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/DSC_0152.JPG",        
+        fotoDepan: "/assets/images/speed-typing-infest-usk.webp",        
         linkPendaftaran: "https://docs.google.com/forms/d/e/1FAIpQLSeqBc-sPvTf0qqzhfKs5qkxLWYzenRD5f2a9mtAMepOVJUc5Q/viewform",
         bukuPanduan: "/buku-panduan"
     },
