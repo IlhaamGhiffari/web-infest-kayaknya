@@ -106,16 +106,16 @@ const Home = () => {
             </p>
             <div className="bg-primary-yellow/40 w-full h-[0.6px]"></div>
             <ul className="flex w-full divide-x-[0.6px] divide-primary-yellow/40">
-              <li className="flex flex-col gap-3 items-center w-full pr-2">
+              <li className="flex flex-col gap-3 items-center w-1/3 pr-2">
                 <p className="font-bold">Waktu</p>
-                <p className="lg:text-sm text-xs text-center text-wrap w-32">09.00 - 12.00 WIB, 28 September 2024</p>
+                <p className="lg:text-sm text-xs text-center text-wrap">09.00 WIB, 28 September 2024</p>
               </li>
-              <li className="flex flex-col gap-3 items-center w-[130%] px-2">
+              <li className="flex flex-col gap-3 items-center w-1/3 px-2">
                 <p className="font-bold">Tempat</p>
                 <p className="lg:text-sm text-xs text-center">Auditorium Multipurpose FMIPA USK</p>
               </li>
-              <li className="pl-4 flex h-full items-end w-full justify-end">
-                <Link href={"/seminar"} className="box text-xs font-bold flex flex-col w-full h-full items-center justify-center gap-2 py-3 shadow-balance-yellow-primary hover:scale-105 duration-200 hover:bg-black">
+              <li className="pl-4 flex h-full items-end justify-end w-1/3">
+                <Link href={"/seminar"} className="box text-xs font-bold flex flex-col w-full h-full items-center justify-center gap-2 p-3 shadow-balance-yellow-primary hover:scale-105 duration-200 hover:bg-black">
                   <Image
                     src={"https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/arrow.webp"}
                     alt="arrow-daftar-seminar"
@@ -158,10 +158,10 @@ const Home = () => {
             </p>
             <div className="bg-primary-yellow/40 w-full h-[0.6px] lg:mt-4"></div>
             <div className="w-full flex justify-between gap-2.5 z-50">
-              <button onClick={() => slideTo(0)} className={`${activeKompetisiIndex == 0 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-xs lg:text-sm lg:hover:scale-105 duration-200`}>UI/UX</button>
-              <button onClick={() => slideTo(1)} className={`${activeKompetisiIndex == 1 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-xs lg:text-sm lg:hover:scale-105 duration-200`}>COINS</button>
-              <button onClick={() => slideTo(2)} className={`${activeKompetisiIndex == 2 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-xs lg:text-sm lg:hover:scale-105 duration-200`}>E-SPORTS</button>
-              <button onClick={() => slideTo(3)} className={`${activeKompetisiIndex == 3 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-xs lg:text-sm lg:hover:scale-105 duration-200 uppercase`}>Speed Typing</button>
+              <button onClick={() => slideTo(0)} className={`${activeKompetisiIndex == 0 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-[0.76rem] lg:text-sm lg:hover:scale-105 duration-200`}>UI/UX</button>
+              <button onClick={() => slideTo(1)} className={`${activeKompetisiIndex == 1 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-[0.76rem] lg:text-sm lg:hover:scale-105 duration-200`}>COINS</button>
+              <button onClick={() => slideTo(2)} className={`${activeKompetisiIndex == 2 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-[0.76rem] lg:text-sm lg:hover:scale-105 duration-200`}>E-SPORTS</button>
+              <button onClick={() => slideTo(3)} className={`${activeKompetisiIndex == 3 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-[0.76rem] lg:text-sm lg:hover:scale-105 duration-200 uppercase`}>Speed Typing</button>
             </div>
           </div>   
           {(isMobile || isTablet) && (

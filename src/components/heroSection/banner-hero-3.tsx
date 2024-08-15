@@ -2,8 +2,10 @@ import Image from "next/image";
 import React from "react";
 import { ArrowCornerDown } from "../icons/arrowCornerDown";
 import { scrollIntoSection } from "@/libs/helpers/scrollIntoSection";
+import { useScreenSize } from "@/libs/hooks/screenSizeValidation";
 
 export const BannerHero3 = () => {
+  const {isMobile, isDesktop, isTablet} = useScreenSize();
   return (
     <div className="h-screen w-full flex justify-center items-center relative bg-gradient-to-t from-primary from-5% to-primary-yellow/5">
       <Image
@@ -31,12 +33,22 @@ export const BannerHero3 = () => {
         <h1 className="text-7xl md:text-[10rem] lg:text-[13.6vw] text-center font-cattedrale tracking-wide">
           KOMPETISI
         </h1>
-        <div className="flex w-full justify-between px-2 gap-2 md:gap-6">
-          <p className="border border-primary-yellow w-24 md:w-full lg:text-[1vw] text-xs flex items-center justify-center bg-primary-yellow/30 rounded-full px-4 py-2 shadow-lg shadow-black/60 text-white">COINS</p>
-          <p className="border border-primary-yellow w-24 md:w-full lg:text-[1vw] text-xs flex items-center justify-center bg-primary-yellow/30 rounded-full px-4 py-2 shadow-lg shadow-black/60 text-white">UI/UX</p>
-          <p className="border border-primary-yellow w-24 md:w-full lg:text-[1vw] text-[0.74rem] flex items-center justify-center bg-primary-yellow/30 rounded-full px-4 py-2 shadow-lg shadow-black/60 text-white">E-SPORTS</p>
-          <p className="border border-primary-yellow w-24 md:w-full lg:text-[1vw] text-[0.74rem] flex items-center justify-center bg-primary-yellow/30 rounded-full px-4 py-2 shadow-lg shadow-black/60 text-white">SPEED TYPING</p>
-        </div>
+        {(isDesktop || isTablet) && (
+          <div className="flex w-full justify-center px-2 gap-2 md:gap-6">
+            <p className="border border-primary-yellow w-24 md:w-full lg:text-[1vw] text-xs flex items-center justify-center bg-primary-yellow/30 rounded-full px-4 py-2 shadow-lg shadow-black/60 text-white">COINS</p>
+            <p className="border border-primary-yellow w-24 md:w-full lg:text-[1vw] text-xs flex items-center justify-center bg-primary-yellow/30 rounded-full px-4 py-2 shadow-lg shadow-black/60 text-white">UI/UX</p>
+            <p className="border border-primary-yellow w-24 md:w-full lg:text-[1vw] text-[0.74rem] flex items-center justify-center bg-primary-yellow/30 rounded-full px-4 py-2 shadow-lg shadow-black/60 text-white">E-SPORTS</p>
+            <p className="border border-primary-yellow md:w-full lg:text-[1vw] text-[0.74rem] flex items-center justify-center bg-primary-yellow/30 rounded-full px-4 py-2 shadow-lg shadow-black/60 text-white text-center">SPEED TYPING</p>
+          </div>
+        )}
+        {isMobile && (
+          <div className="grid grid-cols-2 gap-5 justify-center">
+            <p className="border border-primary-yellow md:w-full lg:text-[1vw] text-xs flex items-center justify-center bg-primary-yellow/30 rounded-full px-4 py-2 shadow-lg shadow-black/60 text-white">COINS</p>
+            <p className="border border-primary-yellow md:w-full lg:text-[1vw] text-xs flex items-center justify-center bg-primary-yellow/30 rounded-full px-4 py-2 shadow-lg shadow-black/60 text-white">UI/UX</p>
+            <p className="border border-primary-yellow md:w-full lg:text-[1vw] text-[0.74rem] flex items-center justify-center bg-primary-yellow/30 rounded-full px-4 py-2 shadow-lg shadow-black/60 text-white">E-SPORTS</p>
+            <p className="border border-primary-yellow md:w-full lg:text-[1vw] text-[0.74rem] flex items-center justify-center bg-primary-yellow/30 rounded-full px-4 py-2 shadow-lg shadow-black/60 text-white text-center">SPEED TYPING</p>
+          </div>
+        )}
         <button onClick={() => scrollIntoSection("kompetisi")} className="rounded-full -mt-[0.6vh] bg-primary-yellow/30 border-[0.4px] border-primary-yellow shadow-lg shadow-black/60 hover:opacity-80 duration-200 text-white px-4 py-2 font-medium text-sm lg:text-[1vw] flex gap-2 items-center">
           <p>Lebih lanjut</p>
           <ArrowCornerDown className="opacity-80"/>
