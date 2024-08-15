@@ -80,14 +80,14 @@ const Home = () => {
           width={700}
           height={700}
           alt="asset-pattern-infest-1"
-          className="absolute right-0 top-0 md:-top-52 -z-10 object-cover opacity-55"
+          className="absolute right-0 top-0 md:-top-52 -z-10 object-cover opacity-50"
         />    
         <Image
           src={"https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/asset-pattern-infest-2.webp"}
           width={800}
           height={800}
           alt="asset-pattern-infest-2"
-          className="absolute left-0 bottom-32 md:-top-20 -z-10 object-cover opacity-55"
+          className="absolute left-0 bottom-32 md:-top-20 -z-10 object-cover opacity-50"
         />    
         <Image
           src={"https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/asset-pattern-infest-1.webp"}
