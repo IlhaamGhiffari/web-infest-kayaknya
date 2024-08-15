@@ -8,7 +8,7 @@ const BukuPanduan = () => {
             src='/assets/images/logo-infest-usk.png'
             width={500}
             height={500}
-            className='w-1/12 absolute top-[22%]'
+            className='w-[8.6vw] absolute top-[22%]'
             alt='logo-infest-usk'
         />        
         <p className='font-bold text-white pr-2 text-7xl font-cattedrale tracking-wide'>SOON</p>
