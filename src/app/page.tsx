@@ -102,23 +102,20 @@ const Home = () => {
               SEMINAR
             </h2>
             <p className="lg:text-justify -mt-8 lg:-mt-14 text-center">
-              Informatics Festival 2024 menyelenggarakan tiga cabang lomba bergengsi. 
-              Uji keterampilan desain dan kreativitas Anda di Kompetisi UI/UX, tantang kemampuan teknis dan analitis di Kompetisi COINS, 
-              serta tunjukkan strategi dan kerjasama tim terbaik di Kompetisi E-sports. 
-              Bergabunglah dan buktikan keahlian Anda di ajang prestisius ini, serta dapatkan pengalaman berharga dan peluang emas untuk bersinar di dunia digital!
+            Seminar Nasional adalah acara yang memfasilitasi diskusi para ahli, praktisi, peneliti untuk berbagi pengetahuan, pengalaman, dan pemikiran terkini. Seminar nasional ini memiliki tema “Dream Big: Strategies for Achieving Greatness”, yang memberi pesan menginspirasi kepada peserta peserta untuk bermimpi besar dan memberikan strategi untuk mencapai prestasi yang luar biasa.
             </p>
             <div className="bg-primary-yellow/40 w-full h-[0.6px]"></div>
             <ul className="flex w-full divide-x-[0.6px] divide-primary-yellow/40">
               <li className="flex flex-col gap-3 items-center w-full pr-2">
                 <p className="font-bold">Waktu</p>
-                <p className="lg:text-sm text-xs text-center">10.00 WIB, 28 September 2024</p>
+                <p className="lg:text-sm text-xs text-center text-wrap w-32">09.00 - 12.00 WIB, 28 September 2024</p>
               </li>
               <li className="flex flex-col gap-3 items-center w-[130%] px-2">
                 <p className="font-bold">Tempat</p>
                 <p className="lg:text-sm text-xs text-center">Auditorium Multipurpose FMIPA USK</p>
               </li>
               <li className="pl-4 flex h-full items-end w-full justify-end">
-                <Link href={"google.com"} className="box text-xs font-bold flex flex-col w-full h-full items-center justify-center gap-2 py-3 shadow-balance-yellow-primary hover:scale-105 duration-200 hover:bg-black">
+                <Link href={"/seminar"} className="box text-xs font-bold flex flex-col w-full h-full items-center justify-center gap-2 py-3 shadow-balance-yellow-primary hover:scale-105 duration-200 hover:bg-black">
                   <Image
                     src={"https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/arrow.webp"}
                     alt="arrow-daftar-seminar"
@@ -157,16 +154,14 @@ const Home = () => {
               KOMPETISI
             </h2>
             <p className="text-white text-center lg:text-justify -mt-8 lg:-mt-14">
-              Informatics Festival 2024 menyelenggarakan tiga cabang lomba bergengsi. 
-              Uji keterampilan desain dan kreativitas Anda di Kompetisi UI/UX, tantang kemampuan teknis dan analitis di Kompetisi COINS, 
-              serta tunjukkan strategi dan kerjasama tim terbaik di Kompetisi E-sports. 
-              Bergabunglah dan buktikan keahlian Anda di ajang prestisius ini, serta dapatkan pengalaman berharga dan peluang emas untuk bersinar di dunia digital!
+            Informatics Festival 2024 menyelenggarakan empat cabang lomba bergengsi. Uji keterampilan desain dan kreativitas Anda di Kompetisi UI/UX, tantang kemampuan teknis dan analitis di Kompetisi COINS, tunjukkan strategi dan kerjasama tim terbaik di Kompetisi E-sports, dan buktikan kecepatan serta ketepatan mengetik Anda di Kompetisi Speed Typing. Bergabunglah dan buktikan keahlian Anda di ajang prestisius ini, serta dapatkan pengalaman berharga dan peluang emas untuk bersinar di dunia digital!                                                                                        
             </p>
             <div className="bg-primary-yellow/40 w-full h-[0.6px] lg:mt-4"></div>
             <div className="w-full flex justify-between gap-2.5 z-50">
               <button onClick={() => slideTo(0)} className={`${activeKompetisiIndex == 0 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-xs lg:text-sm lg:hover:scale-105 duration-200`}>UI/UX</button>
               <button onClick={() => slideTo(1)} className={`${activeKompetisiIndex == 1 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-xs lg:text-sm lg:hover:scale-105 duration-200`}>COINS</button>
               <button onClick={() => slideTo(2)} className={`${activeKompetisiIndex == 2 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-xs lg:text-sm lg:hover:scale-105 duration-200`}>E-SPORTS</button>
+              <button onClick={() => slideTo(3)} className={`${activeKompetisiIndex == 3 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-xs lg:text-sm lg:hover:scale-105 duration-200 uppercase`}>Speed Typing</button>
             </div>
           </div>   
           {(isMobile || isTablet) && (
@@ -192,7 +187,7 @@ const Home = () => {
         ) : (
           <Marquee direction="left" autoFill={true}>
             {partners.map((partner) => (
-              <PartnerCard key={partner.nama} logoSrc={partner.src}/>
+              <PartnerCard key={partner.nama} logoSrc={partner.src} className={partner.className}/>
             ))}
           </Marquee>
         )}

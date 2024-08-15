@@ -3,6 +3,7 @@ import React from "react";
 
 interface PartnerCardProps {
     logoSrc: string;
+    className: string;
 }
 
 export const PartnerCard = (props: PartnerCardProps) => {
@@ -11,9 +12,9 @@ export const PartnerCard = (props: PartnerCardProps) => {
       <Image
         src={props.logoSrc}
         alt="logo-partner-infest-usk"
-        width={80}
-        height={80}
-        className="rounded-xl w-[4rem] md:w-[3.66rem] lg:w-20"
+        width={100}
+        height={100}
+        className={`rounded-xl ${props.className}`}
       />
     </div>
   );

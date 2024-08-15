@@ -22,7 +22,7 @@ export const BannerHero1 = () => {
             className="px-4 py-1"
           />
         </div> 
-        <p className="text-sm -mx-8 my-11">26 SEPTEMBER 2024 - 30 SEPTEMBER 2024</p>
+        <p className="text-sm -mx-8 my-11">15 AGUSTUS 2024 - 28 SEPTEMBER 2024</p>
         <h1 className="text-7xl md:text-[10rem] lg:text-[13.6vw] text-center font-cattedrale tracking-wide">
           INFEST
         </h1>

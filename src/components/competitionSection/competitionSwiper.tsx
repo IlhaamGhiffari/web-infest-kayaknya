@@ -46,7 +46,6 @@ export const CompetitionSwiper: FC<CompetitionSwiperProps> = ({swiperRef, setAct
           >
             <CompetitionCard
               linkPendaftaran={item.linkPendaftaran}
-              deskripsiSingkat={item.deskripsiSingkat}
               namaLomba={item.namaLomba}
               fotoDepan={item.fotoDepan}
               kepanjangan={item.kepanjangan}

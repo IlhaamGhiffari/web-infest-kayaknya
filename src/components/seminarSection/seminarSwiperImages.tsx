@@ -37,7 +37,7 @@ export const SeminarSwiperImages = () => {
       navigation={(isDesktop || isTablet) ? true : false}
       modules={[Keyboard, Navigation, Pagination]}
       style={swiperStyleSeminar}
-      className="lg:w-1/2 w-full border border-primary-yellow seminar-swiper rounded-xl"
+      className="lg:w-1/2 w-full border-2 border-primary-yellow seminar-swiper rounded-xl"
     >
       {seminarImages.map((image) => (
         <SwiperSlide key={image.id} className=" relative">

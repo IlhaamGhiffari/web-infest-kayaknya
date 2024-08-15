@@ -1,33 +1,30 @@
 import Image from "next/image";
 import React from "react";
 import { WhatsApp } from "../icons/whatsApp";
-import { Linkedin } from '../icons/linkedin';
+// import { Linkedin } from '../icons/linkedin';
 import { Tiktok } from "../icons/tiktok";
 import { Instagram } from "../icons/instagram";
 import Link from "next/link";
+import { scrollIntoSection } from "@/libs/helpers/scrollIntoSection";
 
 const socialAccounts = [
   {
-    id: "linkedin",
-    iconComponent: <Linkedin />,
-    url: "",
-  },
-  {
     id: "whatsApp",
     iconComponent: <WhatsApp />,
-    url: "",
+    url: "https://api.whatsapp.com/send?phone=6285269270159",
   },
   {
     id: "tiktok",
-    iconComponent: <Tiktok width="21" height="21" className="mb-2 mr-1"/>,
-    url: "",
+    iconComponent: <Tiktok width="21" height="21" className="mb-2 mr-1" />,
+    url: "https://www.tiktok.com/@hmif_usk?lang=en",
   },
   {
     id: "instagram",
     iconComponent: <Instagram />,
-    url: "",
+    url: "https://www.instagram.com/hmif.fmipausk/",
   },
-]
+];
+
 
 const FooterDekstop = () => {
   return (
@@ -38,12 +35,14 @@ const FooterDekstop = () => {
             Jl. Syech Abdurrauf No.3, Kopelma Darussalam, Kecamatan Syiah Kuala, Kota Banda Aceh, Aceh 23111, Indonesia
           </p>
         </div>
-        <Image
-          src={"https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/logo-infest-usk.webp"}
-          width={70}
-          height={0}
-          alt="logo-infest-usk"
-        />
+        <button onClick={() => scrollIntoSection("hero")} className="duration-200 hover:scale-110">
+          <Image
+            src={"https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/logo-infest-usk.webp"}
+            width={70}
+            height={0}
+            alt="logo-infest-usk"
+          />
+        </button>
         <div className="flex flex-col gap-2 justify-end text-sm items-end w-1/3">
           <div className="flex gap-2">
             {socialAccounts.map((account) => (

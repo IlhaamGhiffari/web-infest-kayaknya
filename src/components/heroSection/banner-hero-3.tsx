@@ -27,7 +27,7 @@ export const BannerHero3 = () => {
         <h5 className="uppercase text-sm -my-3">
           Informatics Festival
         </h5>
-        <p className="font-normal text-sm text-center">Berwawasan dan Bersaing pada Kompetisi Informatics Festival. Jadilah Bintang di Ajang UI/UX, COINS, dan E-sports!</p>
+        <p className="font-normal text-sm text-center">Berwawasan dan Bersaing pada Kompetisi Informatics Festival. Jadilah Bintang di Ajang UI/UX, COINS, E-sports - Mobile Legends, dan Speed Typing!</p>
         <h1 className="text-7xl md:text-[10rem] lg:text-[13.6vw] text-center font-cattedrale tracking-wide">
           KOMPETISI
         </h1>
@@ -35,6 +35,7 @@ export const BannerHero3 = () => {
           <p className="border border-primary-yellow w-24 md:w-full lg:text-[1vw] text-xs flex items-center justify-center bg-primary-yellow/30 rounded-full px-4 py-2 shadow-lg shadow-black/60 text-white">COINS</p>
           <p className="border border-primary-yellow w-24 md:w-full lg:text-[1vw] text-xs flex items-center justify-center bg-primary-yellow/30 rounded-full px-4 py-2 shadow-lg shadow-black/60 text-white">UI/UX</p>
           <p className="border border-primary-yellow w-24 md:w-full lg:text-[1vw] text-[0.74rem] flex items-center justify-center bg-primary-yellow/30 rounded-full px-4 py-2 shadow-lg shadow-black/60 text-white">E-SPORTS</p>
+          <p className="border border-primary-yellow w-24 md:w-full lg:text-[1vw] text-[0.74rem] flex items-center justify-center bg-primary-yellow/30 rounded-full px-4 py-2 shadow-lg shadow-black/60 text-white">SPEED TYPING</p>
         </div>
         <button onClick={() => scrollIntoSection("kompetisi")} className="rounded-full -mt-[0.6vh] bg-primary-yellow/30 border-[0.4px] border-primary-yellow shadow-lg shadow-black/60 hover:opacity-80 duration-200 text-white px-4 py-2 font-medium text-sm lg:text-[1vw] flex gap-2 items-center">
           <p>Lebih lanjut</p>
