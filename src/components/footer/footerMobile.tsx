@@ -1,29 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import { WhatsApp } from "../icons/whatsApp";
-// import { Linkedin } from "../icons/linkedin";
-import { Tiktok } from "../icons/tiktok";
-import { Instagram } from "../icons/instagram";
 import Link from "next/link";
 import { scrollIntoSection } from "@/libs/helpers/scrollIntoSection";
+import { socialAccounts } from "@/data/socialAccount";
 
-const socialAccounts = [
-  {
-    id: "whatsApp",
-    iconComponent: <WhatsApp />,
-    url: "https://api.whatsapp.com/send?phone=6285269270159",
-  },
-  {
-    id: "tiktok",
-    iconComponent: <Tiktok width="21" height="21" className="mb-2 mr-1" />,
-    url: "https://www.tiktok.com/@hmif_usk?lang=en",
-  },
-  {
-    id: "instagram",
-    iconComponent: <Instagram />,
-    url: "https://www.instagram.com/hmif.fmipausk/",
-  },
-];
 
 const FooterMobile = () => {
   return (
