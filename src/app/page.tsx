@@ -157,12 +157,22 @@ const Home = () => {
             Informatics Festival 2024 menyelenggarakan empat cabang lomba bergengsi. Uji keterampilan desain dan kreativitas Anda di Kompetisi UI/UX, tantang kemampuan teknis dan analitis di Kompetisi COINS, tunjukkan strategi dan kerjasama tim terbaik di Kompetisi E-sports, dan buktikan kecepatan serta ketepatan mengetik Anda di Kompetisi Speed Typing. Bergabunglah dan buktikan keahlian Anda di ajang prestisius ini, serta dapatkan pengalaman berharga dan peluang emas untuk bersinar di dunia digital!                                                                                        
             </p>
             <div className="bg-primary-yellow/40 w-full h-[0.6px] lg:mt-4"></div>
-            <div className="w-full flex justify-between gap-2.5 z-50">
-              <button onClick={() => slideTo(0)} className={`${activeKompetisiIndex == 0 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-[0.76rem] lg:text-sm lg:hover:scale-105 duration-200`}>UI/UX</button>
-              <button onClick={() => slideTo(1)} className={`${activeKompetisiIndex == 1 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-[0.76rem] lg:text-sm lg:hover:scale-105 duration-200`}>COINS</button>
-              <button onClick={() => slideTo(2)} className={`${activeKompetisiIndex == 2 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-[0.76rem] lg:text-sm lg:hover:scale-105 duration-200`}>E-SPORTS</button>
-              <button onClick={() => slideTo(3)} className={`${activeKompetisiIndex == 3 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-[0.76rem] lg:text-sm lg:hover:scale-105 duration-200 uppercase`}>Speed Typing</button>
-            </div>
+            {(isDesktop || isTablet) && (
+              <div className="w-full flex justify-between gap-2.5">
+                <button onClick={() => slideTo(0)} className={`${activeKompetisiIndex == 0 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-[0.76rem] lg:text-sm lg:hover:scale-105 duration-200`}>UI/UX</button>
+                <button onClick={() => slideTo(1)} className={`${activeKompetisiIndex == 1 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-[0.76rem] lg:text-sm lg:hover:scale-105 duration-200`}>COINS</button>
+                <button onClick={() => slideTo(2)} className={`${activeKompetisiIndex == 2 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-[0.76rem] lg:text-sm lg:hover:scale-105 duration-200`}>E-SPORTS</button>
+                <button onClick={() => slideTo(3)} className={`${activeKompetisiIndex == 3 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-[0.76rem] lg:text-sm lg:hover:scale-105 duration-200 uppercase`}>Speed Typing</button>
+              </div>
+            )}
+            {isMobile && (
+               <div className="w-full grid grid-cols-2 justify-between gap-2.5">
+                <button onClick={() => slideTo(0)} className={`${activeKompetisiIndex == 0 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-[0.76rem] lg:text-sm lg:hover:scale-105 duration-200`}>UI/UX</button>
+                <button onClick={() => slideTo(1)} className={`${activeKompetisiIndex == 1 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-[0.76rem] lg:text-sm lg:hover:scale-105 duration-200`}>COINS</button>
+                <button onClick={() => slideTo(2)} className={`${activeKompetisiIndex == 2 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-[0.76rem] lg:text-sm lg:hover:scale-105 duration-200`}>E-SPORTS</button>
+                <button onClick={() => slideTo(3)} className={`${activeKompetisiIndex == 3 && 'bg-primary-yellow/60'} shadow-lg shadow-black border border-primary-yellow/40 rounded-xl font-bold px-4 py-3 w-full text-white text-[0.76rem] lg:text-sm lg:hover:scale-105 duration-200 uppercase`}>Speed Typing</button>
+              </div>
+            )}
           </div>   
           {(isMobile || isTablet) && (
             <div className="overflow-hidden pb-10 lg:w-1/2 -mx-8 lg:-mx-0 flex justify-center items-center">
@@ -187,7 +197,7 @@ const Home = () => {
         ) : (
           <Marquee direction="left" autoFill={true}>
             {partners.map((partner) => (
-              <PartnerCard key={partner.nama} logoSrc={partner.src} className={partner.className}/>
+              <PartnerCard key={partner.nama} logoSrc={partner.src} width={partner.width} height={partner.height}/>
             ))}
           </Marquee>
         )}
