@@ -9,7 +9,7 @@ export const Tiktok = (props: SVGProps) => {
       width={props.width || "30"}
       height={props.height || "30"}
       viewBox="0 0 32 32"
-      className={props.className}
+      className="pr-1"
       version="1.1"
     >
       <title>tiktok</title>

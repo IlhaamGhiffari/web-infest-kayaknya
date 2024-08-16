@@ -8,7 +8,7 @@ export const kompetisi = [
         totalHadiah: "Rp. 10.000.000",
         fotoDepan: "https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/UI-and-UX.webp",        
         linkPendaftaran: "https://bit.ly/DaftarUIUXDesignINFEST2024",
-        bukuPanduan: "/buku-panduan"
+        bukuPanduan: "https://drive.google.com/file/d/1iO9euBzbpbcWtHn5urQnKcoaKnEiAC4H/view?usp=drive_link"
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ export const kompetisi = [
         totalHadiah: "Rp. 1.000.000",
         fotoDepan: "https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/dokumentasi-coins-infest-usk.webp",        
         linkPendaftaran: "https://bit.ly/InfestCoins2024",
-        bukuPanduan: "/buku-panduan"
+        bukuPanduan: " https://drive.google.com/file/d/1vkHWovqq5dd7LU1r8lKGnjKdICEBiDWS/view?usp=drivesdk"
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ export const kompetisi = [
         totalHadiah: "Rp. 6.000.000",
         fotoDepan: "https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/coins-infest-usk.webp",        
         linkPendaftaran: "https://bit.ly/DaftarMLInfestX2024",
-        bukuPanduan: "/buku-panduan"
+        bukuPanduan: "https://drive.google.com/file/d/1nKB5JDnuTyxeC7dLxbArDXDzdgUU1fFW/view?usp=drivesdk"
     },
     {
         id: 4,
@@ -41,6 +41,6 @@ export const kompetisi = [
         totalHadiah: "Rp. 6.000.000",
         fotoDepan: "/assets/images/speed-typing-infest-usk.webp",        
         linkPendaftaran: "https://docs.google.com/forms/d/e/1FAIpQLSeqBc-sPvTf0qqzhfKs5qkxLWYzenRD5f2a9mtAMepOVJUc5Q/viewform",
-        bukuPanduan: "/buku-panduan"
+        bukuPanduan: "https://drive.google.com/file/d/1dS7pzVYNoUU-PD44AYvrPHOn5QAP38or/view?usp=drive_link"
     },
 ]

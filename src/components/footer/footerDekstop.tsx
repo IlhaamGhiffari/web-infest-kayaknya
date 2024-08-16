@@ -25,7 +25,7 @@ const FooterDekstop = () => {
         <div className="flex flex-col gap-2 justify-end text-sm items-end w-1/3">
           <div className="flex gap-2">
             {socialAccounts.map((account) => (
-              <Link key={account.id} href={account.url} className="hover:scale-110 duration-200">
+              <Link key={account.id} href={account.url} className={`hover:scale-110 duration-200`}>
                 {account.iconComponent}
               </Link>
             ))}

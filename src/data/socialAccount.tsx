@@ -10,7 +10,7 @@ export const socialAccounts = [
   },
   {
     id: "tiktok",
-    iconComponent: <Tiktok width="21" height="21" className="mb-2 mr-1" />,
+    iconComponent: <Tiktok width="24" height="24"/>,
     url: "https://www.tiktok.com/@hmif_usk",
   },
   {
