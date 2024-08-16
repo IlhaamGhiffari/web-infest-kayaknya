@@ -18,9 +18,10 @@ const FooterMobile = () => {
       </button>
       <div className="flex gap-2 mt-2">
         {socialAccounts.map((account) => (
-          <Link
+          <Link          
             key={account.id}
             href={account.url}
+            target="_blank"
             className="hover:scale-110 duration-200"
           >
             {account.iconComponent}

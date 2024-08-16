@@ -40,11 +40,11 @@ export const CompetitionCard = (props: CompetitionCardProps) => {
         <p className={`text-xs md:text-[0.9rem] w-full font-normal text-left`}>{props.jadwalPelaksanaan}</p>
       </div>
       <div className="flex flex-col md:flex-row gap-3 md:gap-4">
-        <Link href={props.bukuPanduan} className={`shadow-balance-yellow-primary rounded-2xl duration-200 bg-black/60 border-2 hover:scale-[1.03] hover:border-secondary-yellow/30 border-secondary-yellow flex justify-between items-center text-xs w-full px-4 py-2 gap-4 ${montserrat.className}`}>
+        <Link href={props.bukuPanduan} target="_blank" className={`shadow-balance-yellow-primary rounded-2xl duration-200 bg-black/60 border-2 hover:scale-[1.03] hover:border-secondary-yellow/30 border-secondary-yellow flex justify-between items-center text-xs w-full px-4 py-2 gap-4 ${montserrat.className}`}>
           <p className="font-bold py-1 md:text-sm">Buku Panduan</p>
           <Arrow />
         </Link>
-        <Link href={props.linkPendaftaran} className={`shadow-balance-yellow-primary rounded-2xl duration-200 bg-secondary-yellow/30 border-2 hover:scale-[1.03] hover:border-secondary-yellow/30 border-secondary-yellow flex justify-between items-center text-xs w-full px-4 py-2 gap-4 ${montserrat.className}`}>
+        <Link href={props.linkPendaftaran} target="_blank" className={`shadow-balance-yellow-primary rounded-2xl duration-200 bg-secondary-yellow/30 border-2 hover:scale-[1.03] hover:border-secondary-yellow/30 border-secondary-yellow flex justify-between items-center text-xs w-full px-4 py-2 gap-4 ${montserrat.className}`}>
           <p className="font-bold py-1 md:text-sm ">Daftar Sekarang</p>
           <Arrow />
         </Link>
