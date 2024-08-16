@@ -28,24 +28,24 @@ export const CompetitionCard = (props: CompetitionCardProps) => {
         />
       </div>
       <div className="flex flex-col gap-2 items-center lg:group-hover:scale-[1.16] duration-300">
-        <h3 className="font-cattedrale text-white text-center text-6xl lg:text-7xl">{props.namaLomba}</h3>
+        <h3 className={`font-cattedrale text-white text-center lg:text-7xl ${props.namaLomba === "Speed Typing" ? 'text-[2.86rem]' : 'text-6xl'}`}>{props.namaLomba}</h3>
         <p className="text-xs md:text-[1rem] font-bold">{props.kepanjangan}</p>
       </div>
       <div className="flex flex-col gap-1 md:gap-3 lg:group-hover:scale-105 duration-300 lg:group-hover:px-2">
-        <p className="font-bold text-xs md:text-[1.2rem]">Pendaftaran</p>
-        <p className={`text-xs md:text-[1rem] w-full font-normal text-left`}>{props.jadwalPendaftaran}</p>
+        <p className="font-bold text-xs md:text-[1.06rem]">Pendaftaran</p>
+        <p className={`text-xs md:text-[0.9rem] w-full font-normal text-left`}>{props.jadwalPendaftaran}</p>
       </div>
       <div className="flex flex-col gap-1 md:gap-3 lg:group-hover:scale-105 duration-300 lg:group-hover:px-2">
-        <p className="font-bold text-xs md:text-[1.2rem]">Pelaksanaan</p>
-        <p className={`text-xs md:text-[1rem] w-full font-normal text-left`}>{props.jadwalPelaksanaan}</p>
+        <p className="font-bold text-xs md:text-[1.06rem]">Pelaksanaan</p>
+        <p className={`text-xs md:text-[0.9rem] w-full font-normal text-left`}>{props.jadwalPelaksanaan}</p>
       </div>
-      <div className="flex flex-col md:flex-row gap-2.5 md:gap-4">
-        <Link href={props.bukuPanduan} className={`rounded-2xl duration-200 bg-black/60 border hover:scale-[1.03] hover:border-secondary-yellow/30 border-secondary-yellow flex justify-between items-center text-xs w-full px-4 py-2 gap-4 ${montserrat.className}`}>
-          <p className="font-medium">Buku Panduan</p>
+      <div className="flex flex-col md:flex-row gap-3 md:gap-4">
+        <Link href={props.bukuPanduan} className={`shadow-balance-yellow-primary rounded-2xl duration-200 bg-black/60 border-2 hover:scale-[1.03] hover:border-secondary-yellow/30 border-secondary-yellow flex justify-between items-center text-xs w-full px-4 py-2 gap-4 ${montserrat.className}`}>
+          <p className="font-bold py-1 md:text-sm">Buku Panduan</p>
           <Arrow />
         </Link>
-        <Link href={props.linkPendaftaran} className={`rounded-2xl duration-200 bg-black/60 border hover:scale-[1.03] hover:border-secondary-yellow/30 border-secondary-yellow flex justify-between items-center text-xs w-full px-4 py-2 gap-4 ${montserrat.className}`}>
-          <p className="font-medium">Daftar Sekarang</p>
+        <Link href={props.linkPendaftaran} className={`shadow-balance-yellow-primary rounded-2xl duration-200 bg-secondary-yellow/30 border-2 hover:scale-[1.03] hover:border-secondary-yellow/30 border-secondary-yellow flex justify-between items-center text-xs w-full px-4 py-2 gap-4 ${montserrat.className}`}>
+          <p className="font-bold py-1 md:text-sm ">Daftar Sekarang</p>
           <Arrow />
         </Link>
       </div>
