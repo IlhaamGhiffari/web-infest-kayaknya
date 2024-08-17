@@ -39,7 +39,6 @@ const Home = () => {
     return () => clearTimeout(timer);
   }, []);
   
-  // test commit
   return (
     <div className=" h-full w-full flex flex-col overflow-x-hidden">
       <div>
