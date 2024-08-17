@@ -25,9 +25,9 @@ export const CompetitionCard = (props: CompetitionCardProps) => {
           fill
           sizes="(max-width: 1024px) 100vw, 50vw"
           className="rounded-lg object-cover"
-        />
+          />
       </div>
-      <div className="flex flex-col gap-2 items-center lg:group-hover:scale-[1.16] duration-300">
+      <div className="flex flex-col gap-2 items-center lg:group-hover:scale-[1.16] duration-300">      
         <h3 className={`font-cattedrale text-white text-center lg:text-7xl ${props.namaLomba === "Speed Typing" ? 'text-[2.86rem]' : 'text-6xl'}`}>{props.namaLomba}</h3>
         <p className="text-xs md:text-[1rem] font-bold">{props.kepanjangan}</p>
       </div>
