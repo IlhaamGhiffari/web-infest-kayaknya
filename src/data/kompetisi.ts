@@ -8,7 +8,7 @@ export const kompetisi = [
         totalHadiah: "Rp. 10.000.000",
         fotoDepan: "https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/UI-and-UX.webp",        
         linkPendaftaran: "https://bit.ly/DaftarUIUXDesignINFEST2024",
-        bukuPanduan: "https://drive.google.com/file/d/1iO9euBzbpbcWtHn5urQnKcoaKnEiAC4H/view?usp=drive_link"
+        bukuPanduan: "https://drive.google.com/file/d/1Cto1hj6JUzAaRVbiZlVUJgNHJa2QGhyL/view?usp=sharing",
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ export const kompetisi = [
         totalHadiah: "Rp. 1.000.000",
         fotoDepan: "https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/dokumentasi-coins-infest-usk.webp",        
         linkPendaftaran: "https://bit.ly/InfestCoins2024",
-        bukuPanduan: " https://drive.google.com/file/d/1vkHWovqq5dd7LU1r8lKGnjKdICEBiDWS/view?usp=drivesdk"
+        bukuPanduan: "https://drive.google.com/file/d/1ReZ1RIq3x5rsnU3yAgZkXWXc3P_0Gq2i/view"
     },
     {
         id: 3,
@@ -29,18 +29,18 @@ export const kompetisi = [
         jadwalPelaksanaan: "19 Oktober 2024 - 20 Oktober 2024",
         totalHadiah: "Rp. 6.000.000",
         fotoDepan: "https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/coins-infest-usk.webp",        
-        linkPendaftaran: "https://bit.ly/DaftarMLInfestX2024",
-        bukuPanduan: "https://drive.google.com/file/d/1nKB5JDnuTyxeC7dLxbArDXDzdgUU1fFW/view?usp=drivesdk"
+        linkPendaftaran: "https://bit.ly/DaftarMLInfestX2024",        
+        bukuPanduan: "https://drive.google.com/file/d/1Deo6kHDXABFunAY-l44rH0RAUEAVIPW_/view"
     },
     {
         id: 4,
         namaLomba: "Speed Typing",
         kepanjangan: " ",      
         jadwalPendaftaran: "16 Agustus 2024 - 16 Oktober 2024",
-        jadwalPelaksanaan: "23 Oktober 2024",
+        jadwalPelaksanaan: "24 Oktober 2024",
         totalHadiah: "Rp. 6.000.000",
         fotoDepan: "/assets/images/speed-typing-infest-usk.webp",        
         linkPendaftaran: "https://bit.ly/SpeedTypingInfestX",
-        bukuPanduan: "https://drive.google.com/file/d/1dS7pzVYNoUU-PD44AYvrPHOn5QAP38or/view?usp=drive_link"
+        bukuPanduan: "https://drive.google.com/file/d/1JpRoloQbRHkdVIVJfx_nLmF5Ct32F2ic/view"
     },
 ]
