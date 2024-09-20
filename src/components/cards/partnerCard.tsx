@@ -5,6 +5,7 @@ interface PartnerCardProps {
     logoSrc: string;
     width: number;
     height: number;
+    className?: string;
 }
 
 export const PartnerCard = (props: PartnerCardProps) => {
@@ -15,7 +16,7 @@ export const PartnerCard = (props: PartnerCardProps) => {
         alt="logo-partner-infest-usk"
         width={props.width}
         height={props.height}
-        className={`rounded-xl`}
+        className={`rounded-xl ${props.className}`}
       />
     </div>
   );
