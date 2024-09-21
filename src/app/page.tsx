@@ -196,7 +196,7 @@ const Home = () => {
         ) : (
           <Marquee direction="left" autoFill={true}>
             {partners.map((partner) => (
-              <PartnerCard key={partner.nama} logoSrc={partner.src} width={partner.width} height={partner.height} className={partner.className}/>
+              <PartnerCard key={partner.nama} logoSrc={partner.src} width={partner.width} height={partner.height} logoClassName={partner.className}/>
             ))}
           </Marquee>
         )}
