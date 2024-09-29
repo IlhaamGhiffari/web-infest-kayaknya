@@ -8,7 +8,7 @@ export const kompetisi = [
         totalHadiah: "Rp. 10.000.000",
         fotoDepan: "https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/UI-and-UX.webp",        
         linkPendaftaran: "https://bit.ly/DaftarUIUXDesignINFEST2024",
-        bukuPanduan: "https://drive.google.com/file/d/1Cto1hj6JUzAaRVbiZlVUJgNHJa2QGhyL/view?usp=sharing",
+        bukuPanduan: "https://drive.google.com/file/d/15ckwX3Qcl2mWLpSDTygsaBYqpfs3ogWM/view?usp=sharing",
     },
     {
         id: 2,
