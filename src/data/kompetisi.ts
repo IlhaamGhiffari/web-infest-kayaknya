@@ -5,7 +5,7 @@ export const kompetisi = [
         kepanjangan: "User Interface / User Experience",            
         jadwalPendaftaran: "16 September 2024 - 1 Oktober 2024",
         jadwalPelaksanaan: "16 September 2024 - 21 Oktober 2024",
-        totalHadiah: "Rp. 10.000.000",
+        totalHadiah: "Rp. 5.000.000",
         fotoDepan: "https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/UI-and-UX.webp",        
         linkPendaftaran: "https://bit.ly/DaftarUIUXDesignINFEST2024",
         bukuPanduan: "https://drive.google.com/file/d/15ckwX3Qcl2mWLpSDTygsaBYqpfs3ogWM/view?usp=sharing",
