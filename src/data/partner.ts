@@ -68,4 +68,34 @@ export const partners = [
         width: 136,
         height: 136,
     },
+    {
+        nama: "DETAK",
+        src:"/assets/images/Logo-Detak.png",
+        width: 72,
+        height: 72,
+    },
+    {
+        nama: "RRI",
+        src:"/assets/images/rri.webp",
+        width: 80,
+        height: 80,
+    },
+    {
+        nama: "TEKNOEVENT",
+        src:"/assets/images/Tekno-Event.png",
+        width: 72,
+        height: 72,
+    },
+    {
+        nama: "WARDAH",
+        src:"/assets/images/wardah.jpeg",
+        width: 136,
+        height: 136,
+    },
+    {
+        nama: "BANKACEH",
+        src:"/assets/images/Bank Aceh.png",
+        width: 112,
+        height: 112,
+    },
 ]
