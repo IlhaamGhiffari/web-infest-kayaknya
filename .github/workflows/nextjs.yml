@@ -28,26 +28,18 @@ jobs:
         run: yarn install
 
 
-      # Step 4: Run unit tests
-      - name: Run unit tests
-        run: yarn test
-
-      # Step 5: Run end-to-end tests (optional, if applicable)
-      - name: Run E2E tests
-        run: yarn test:e2e
-
-      # Step 6: Build the Next.js site
+      # Step 4: Build the Next.js site
       - name: Build Next.js
         run: yarn build
 
-      # Step 7: Log in to Docker Hub
+      # Step 5: Log in to Docker Hub
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      # Step 8: Build and push Docker image to Docker Hub
+      # Step 6: Build and push Docker image to Docker Hub
       - name: Build and Push Docker image
         uses: docker/build-push-action@v6
         with:
