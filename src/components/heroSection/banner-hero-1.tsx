@@ -5,7 +5,7 @@ export const BannerHero1 = () => {
   return (
     <div className="h-screen w-full flex justify-center items-center relative bg-gradient-to-t from-primary from-5% to-secondary-yellow/5">
       <Image
-        src={"https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/dokumentasi-opening-infest-usk.webp"}
+        src={"/assets/images/Opening Infest USK.webp"}
         className="-z-10 object-cover opacity-60"
         priority
         fill
@@ -15,7 +15,7 @@ export const BannerHero1 = () => {
       <div className="flex flex-col text-primary-yellow items-center px-8 md:px-32 md:mt-16">
         <div className="relative w-52 h-12 ">
           <Image
-            src={'https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/gabungan-logo.webp'}
+            src={'/assets/images/Gabungan Logo.webp'}
             alt='gabungan-logo-instansi-terkait-infest-usk'
             fill
             sizes="40vw"
