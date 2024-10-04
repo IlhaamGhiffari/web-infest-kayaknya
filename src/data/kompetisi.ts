@@ -3,7 +3,7 @@ export const kompetisi = [
         id: 1,
         namaLomba: "UI/UX",
         kepanjangan: "User Interface / User Experience",            
-        jadwalPendaftaran: "16 September 2024 - 1 Oktober 2024",
+        jadwalPendaftaran: "16 September 2024 - 10 Oktober 2024",
         jadwalPelaksanaan: "16 September 2024 - 21 Oktober 2024",
         totalHadiah: "Rp. 5.000.000",
         fotoDepan: "https://jbymoblt3fzt0jez.public.blob.vercel-storage.com/UI-and-UX.webp",        
