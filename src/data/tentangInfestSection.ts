@@ -21,4 +21,9 @@ export const imagesForMobile = [
     src: "/assets/images/Seminar-4 Infest USK.webp",
     alt: "dokumentasi-seminar-infest-usk",
   },
+  {
+    id: 4,
+    src: "/assets/images/Seminar-6 Infest USK.webp",
+    alt: "dokumentasi-seminar-infest-usk",
+  },
 ];
