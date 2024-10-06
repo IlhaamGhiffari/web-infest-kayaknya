@@ -48,6 +48,7 @@ export const DaftarSeminarModal = ({
       }
     } else {
       toast.error("Data belum lengkap");
+      toast.dismiss(toastLoad);
     }
   };
 

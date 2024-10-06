@@ -22,4 +22,5 @@ model PesertaSeminar {
   jumlahPembayaran Int
   jumlahPendaftar Int
   buktiUrl String
+  CreatedAt DateTime @default(now())
 }
