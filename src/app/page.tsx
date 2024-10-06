@@ -42,7 +42,7 @@ const Home = () => {
   }, []);
   
   return (
-    <div className=" h-full w-full flex flex-col overflow-x-hidden">
+    <div className={`h-full w-full flex flex-col overflow-x-hidden`}>
       <div>
         <Header/>
       </div>
@@ -141,7 +141,7 @@ const Home = () => {
         </div>    
         <div className="bg-gradient-to-r from-transparent to-transparent via-primary-yellow from-10% to-90% w-full h-[0.1rem] mt-8 lg:mt-12"></div>{/* line separator*/}
         {isDaftarSeminar && (
-          <DaftarSeminarModal/>
+          <DaftarSeminarModal closeModal={() => setIsDaftarSeminar(false)}/>
         )}
       </div>
       <div id="kompetisi" className="flex flex-col relative w-full pt-14 lg:pt-32 px-8 md:px-16 gap-12 bg-gradient-to-b from-primary via-transparent to-primary">

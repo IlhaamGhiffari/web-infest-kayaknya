@@ -5,14 +5,18 @@ import Image from "next/image";
 import toast from "react-hot-toast";
 import axios from "axios";
 
-export const DaftarSeminarModal = () => {
+export const DaftarSeminarModal = ({
+  closeModal,
+}: {
+  closeModal: () => void;
+}) => {
   const [dataPendaftar, setDataPendaftar] = useState({
     nama: "",
     no_hp: "",
     email: "",
     instansiAsal: "",
     jumlahPembayaran: 0,
-    jumlahPendaftar: 0,
+    jumlahPendaftar: 1,
     buktiUrl: "",
   });
 
@@ -20,21 +24,25 @@ export const DaftarSeminarModal = () => {
     setDataPendaftar({ ...dataPendaftar, buktiUrl: url });
   };
 
-  const handleSubmit = async() => {
+  const handleSubmit = async () => {
+    const toastLoad = toast.loading("Mendaftarkan...");
     if (
       dataPendaftar.nama &&
       dataPendaftar.no_hp &&
       dataPendaftar.email &&
-      dataPendaftar.jumlahPendaftar && 
+      dataPendaftar.jumlahPendaftar &&
       dataPendaftar.buktiUrl
     ) {
       dataPendaftar.jumlahPembayaran = dataPendaftar.jumlahPendaftar * 15000;
       console.log(dataPendaftar);
       try {
         const data = await axios.post("/api/daftarSeminar", dataPendaftar);
-        console.log("DATA: ", data);        
+        console.log("DATA: ", data);
+        toast.dismiss(toastLoad);
         toast.success("Pendaftaran berhasil");
+        closeModal();
       } catch (error) {
+        toast.dismiss(toastLoad);
         console.log("ERROR: ", error);
         toast.error("Pendaftaran gagal");
       }
@@ -44,8 +52,16 @@ export const DaftarSeminarModal = () => {
   };
 
   return (
-    <div className="w-screen h-screen fixed top-0 left-0 bg-black/80 flex justify-center items-center z-[100]">
-      <div className="rounded-xl text-white border border-primary-yellow bg-primary shadow-lg shadow-black h-[80vh] overflow-y-scroll relative z-[100] px-12 py-10 flex flex-col gap-4">
+    <div className="w-screen h-screen fixed top-0 left-0 bg-black/80 flex flex-col justify-center items-center z-[100]">
+      <div className="w-[36vw] flex justify-end -mb-4 -mr-5 relative z-[1001]">
+        <button
+          className="duration-100 bg-red-800 hover:scale-110 text-white font-bold rounded-full w-7 h-7 flex pb-0.5 justify-center items-center"
+          onClick={closeModal}
+        >
+          x
+        </button>
+      </div>
+      <div className="rounded-xl text-white border border-primary-yellow bg-primary shadow-lg shadow-black h-[80vh] w-[36vw] overflow-y-scroll relative z-[100] px-12 py-10 flex flex-col gap-4">
         <h2 className="font-extrabold mb-2 text-3xl uppercase text-center">
           Pendaftaran Seminar
         </h2>
@@ -64,14 +80,15 @@ export const DaftarSeminarModal = () => {
         </p>
         <form action="" className="flex flex-col gap-6">
           <div className="flex flex-col gap-2">
-            <label className="font-bold" htmlFor="nama">
+            <label className="font-bold text-sm mt-1.5" htmlFor="nama">
               Nama Lengkap Pendaftar
             </label>
             <input
+              placeholder="Nama Lengkap"
               type="text"
               name="nama"
               id="nama"
-              className="rounded-xl py-2 bg-transparent border-[0.6px] border-primary-yellow shadow-lg shadow-black px-3"
+              className="rounded-xl py-2.5 text-sm bg-transparent border-[0.6px] border-primary-yellow shadow-lg shadow-black px-3"
               onChange={(e) =>
                 setDataPendaftar({ ...dataPendaftar, nama: e.target.value })
               }
@@ -79,14 +96,15 @@ export const DaftarSeminarModal = () => {
             />
           </div>
           <div className="flex flex-col gap-2">
-            <label className="font-bold" htmlFor="email">
+            <label className="font-bold text-sm mt-1.5" htmlFor="email">
               Email Pendaftar
             </label>
             <input
+              placeholder="Email"
               type="text"
               name="email"
               id="email"
-              className="rounded-xl py-2 bg-transparent border-[0.6px] border-primary-yellow shadow-lg shadow-black px-3"
+              className="rounded-xl py-2.5 text-sm bg-transparent border-[0.6px] border-primary-yellow shadow-lg shadow-black px-3"
               onChange={(e) =>
                 setDataPendaftar({ ...dataPendaftar, email: e.target.value })
               }
@@ -94,14 +112,15 @@ export const DaftarSeminarModal = () => {
             />
           </div>
           <div className="flex flex-col gap-2">
-            <label className="font-bold" htmlFor="no_hp">
+            <label className="font-bold text-sm mt-1.5" htmlFor="no_hp">
               Nomor HP Pendaftar
             </label>
             <input
+              placeholder="Nomor HP"
               type="text"
               name="no_hp"
               id="no_hp"
-              className="rounded-xl py-2 bg-transparent border-[0.6px] border-primary-yellow shadow-lg shadow-black px-3"
+              className="rounded-xl py-2.5 text-sm bg-transparent border-[0.6px] border-primary-yellow shadow-lg shadow-black px-3"
               onChange={(e) =>
                 setDataPendaftar({ ...dataPendaftar, no_hp: e.target.value })
               }
@@ -109,14 +128,15 @@ export const DaftarSeminarModal = () => {
             />
           </div>
           <div className="flex flex-col gap-2">
-            <label className="font-bold" htmlFor="instansiAsal">
+            <label className="font-bold text-sm mt-1.5" htmlFor="instansiAsal">
               Instansi Asal (Optional)
             </label>
             <input
+              placeholder="Instansi Asal"
               type="text"
               name="instansiAsal"
               id="instansiAsal"
-              className="rounded-xl py-2 bg-transparent border-[0.6px] border-primary-yellow shadow-lg shadow-black px-3"
+              className="rounded-xl py-2.5 text-sm bg-transparent border-[0.6px] border-primary-yellow shadow-lg shadow-black px-3"
               onChange={(e) =>
                 setDataPendaftar({
                   ...dataPendaftar,
@@ -127,14 +147,18 @@ export const DaftarSeminarModal = () => {
             />
           </div>
           <div className="flex flex-col gap-2">
-            <label className="font-bold" htmlFor="jumlahPendaftar">
+            <label
+              className="font-bold text-sm mt-1.5"
+              htmlFor="jumlahPendaftar"
+            >
               Jumlah Pendaftar
             </label>
             <input
+              placeholder="Jumlah Pendaftar"
               type="number"
               name="jumlahPendaftar"
               id="jumlahPendaftar"
-              className="rounded-xl py-2 bg-transparent border-[0.6px] border-primary-yellow shadow-lg shadow-black px-3"
+              className="rounded-xl py-2.5 text-sm bg-transparent border-[0.6px] border-primary-yellow shadow-lg shadow-black px-3"
               onChange={(e) => {
                 const value = parseInt(e.target.value);
                 if (value > 0) {
@@ -157,7 +181,7 @@ export const DaftarSeminarModal = () => {
             />
           </div>
           <div className="flex flex-col gap-2">
-            <label className="font-bold" htmlFor="">
+            <label className="font-bold text-sm mt-1.5" htmlFor="">
               Bukti Pembayaran
             </label>
             <p className="-mt-1 text-[0.7rem]">
