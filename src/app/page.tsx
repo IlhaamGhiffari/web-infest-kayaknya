@@ -58,7 +58,7 @@ const Home = () => {
           className="absolute inset-0 -z-10 object-cover opacity-30"
         />
         <h2 className={`text-[26vw] lg:text-[10rem] text-center text-primary-yellow font-imbue -mb-12`}>
-          TENTANG INFEST
+          TENTANG INFEST USK
         </h2>
         <p className={`text-white text-[0.9rem] md:text-base text-center`}>
           {infestDescription}
